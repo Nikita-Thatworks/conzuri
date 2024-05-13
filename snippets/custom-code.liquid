@@ -1,0 +1,54 @@
+<div class="size_wrapper">
+  {% assign color_option_index = 0 %}
+  {% assign second_option_index = 1 %}
+  {% for option in product.options %}
+    {% assign downcased_option = option | downcase %}
+    {% assign option_index = forloop.index0 %}
+    {% assign how_many_options = 0 %}
+    {% assign current_options = '' %}
+    {% if downcased_option == 'color' or downcased_option == 'size' %}
+      <div
+        {% if downcased_option == 'color' %}
+          class="color_option"
+        {% endif %}
+        {% if downcased_option == 'size' %}
+          class="color_size" data-option-selector
+        {% endif %}
+      >
+        {% for variant in product.variants %}
+          {% assign current_option = variant.options[option_index] %}
+          {% unless current_options contains current_option %}
+            {% if how_many_options > 0 %}
+              {% assign current_options = current_options | join: '|' | append: '|' %}
+            {% endif %}
+            {% assign current_options = current_options | append: current_option %}
+            {% assign current_options = current_options | split: '|' | sort %}
+            {% assign how_many_options = current_options | size %}
+            {% if downcased_option == 'color' %}
+              {% if how_many_options > 1 %}
+                {% if variant.featured_image.src %}
+                  <a href="{{ product.url }}">
+                    <img src="{{ variant.featured_image.src | img_url: 'medium' }}" alt="{{ current_option }}"
+                  ></a>
+                {% endif %}
+              {% endif %}
+            {% else %}
+              {% if variant.title contains 'US' %}
+                {% assign country_option = 'US' %}
+              {% elsif variant.title contains 'UK' %}
+                {% assign country_option = 'UK' %}
+              {% elsif variant.title contains 'JP' %}
+                {% assign country_option = 'JP' %}
+              {% else %}
+                {% assign country_option = 'EU' %}
+              {% endif %}
+              <div data-value="{{ country_option }}" class="ct_swatch size_opt {% if variant.available %}avail {% else %}soldOut is-disabled block-swatch {% endif %}">
+                <a href="{{ product.url }}">{{ current_option }}</a>
+              </div>
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

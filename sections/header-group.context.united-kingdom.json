@@ -1,0 +1,18 @@
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "united-kingdom"
+  },
+  "sections": {
+    "scrolling_content_RkDyXM": {
+      "settings": {},
+      "blocks": {
+        "text_FqTW6i": {
+          "settings": {
+            "text": "FREE SHIPPING OVER <strong>£155 <\/strong>"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "united-kingdom"
+  },
+  "sections": {
+    "slideshow": {
+      "settings": {},
+      "blocks": {
+        "slide-1": {
+          "settings": {
+            "image": "shopify:\/\/shop_images\/uk-desk-final_ddf24c40-9bdc-4cd2-8a24-55ba65f2a3a6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/uk-mob.jpg",
+            "button_1_style": "outline",
+            "button_2_style": "solid"
+          }
+        }
+      }
+    },
+    "multi_column_gAyUde": {
+      "settings": {},
+      "blocks": {
+        "image_with_text_CR6e4b": {
+          "settings": {
+            "content": "<p>MAN-U PLAYER \/\/<strong> 1M+ Followers<\/strong><\/p>"
+          }
+        }
+      }
+    }
+  }
+}

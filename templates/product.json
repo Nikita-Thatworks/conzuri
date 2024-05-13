@@ -1,0 +1,359 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "rating_FDBr4K": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "loox_reviews_loox_rating_t39Nr4": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 11,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "variant",
+            "size_chart_page": "",
+            "button_title": "Size Guide",
+            "button_style": "link",
+            "stretch_button": false,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "Size Guide",
+            "popup_image": "shopify:\/\/shop_images\/1-schoenmaat-tabel-isabel-bernard-en.webp",
+            "modal_content": ""
+          }
+        },
+        "modal_kN88hK": {
+          "type": "modal",
+          "disabled": true,
+          "settings": {
+            "button_title": "Size Guide",
+            "button_style": "link",
+            "stretch_button": false,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "Modal title",
+            "modal_content": "<p>Write some content that will appear in a modal<\/p>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#333333",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "feature_with_icon_ReJk9y": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Free Shipping",
+            "link": "",
+            "icon": "picto-delivery-truck",
+            "icon_width": 20,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_BxEDhx": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "All shoes feature a comfortable, elevated insole",
+            "link": "",
+            "icon": "picto-info",
+            "icon_width": 20,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "accordion_G7FdVG": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "elevation & comfort",
+            "content": "<p>Unlike normal shoes (that feature a basic, flat insole) - we use a bespoke, elevated insole. Integrated inside of the shoe, Conzuri's are engineered to be felt, not seen.<\/p><p>Our shoes have been optimized with comfort in-mind, so you can do all the things you usually do, with an elevated-look and maximum confidence.<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
+          }
+        },
+        "accordion_kT47Up": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Shipping",
+            "content": "<p>We aim to dispatch all orders within 24 business hours. Shipping is free worldwide. <\/p><p>For more shipping information, please visit our <a href=\"\/pages\/faq\" title=\"Faq\">FAQs<\/a>.<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_xNMwj3": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Returns",
+            "content": "<p>We accept returns & exchanges on all products, up to 30 days after purchase. Please see our returns policy for more details.<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "image_yqmjD7": {
+          "type": "image",
+          "settings": {
+            "alignment": "start",
+            "width_mode": "custom",
+            "max_width": 300,
+            "mobile_max_width": 200
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "rating_FDBr4K",
+        "loox_reviews_loox_rating_t39Nr4",
+        "title",
+        "price",
+        "payment_terms",
+        "separator",
+        "variant_picker",
+        "modal_kN88hK",
+        "quantity_selector",
+        "buy_buttons",
+        "feature_with_icon_ReJk9y",
+        "feature_with_icon_BxEDhx",
+        "accordion_G7FdVG",
+        "description",
+        "accordion_kT47Up",
+        "accordion_xNMwj3",
+        "image_yqmjD7"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "container_size": "lg",
+        "product_info_size": 40,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 5,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "17083758432be5c165": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_W9pzAW": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 6,
+            "hide_thumbnails": true,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_W9pzAW"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "You May Also Like",
+        "content": ""
+      }
+    },
+    "faq_bPrkXh": {
+      "type": "faq",
+      "blocks": {
+        "question_Mt3nMK": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my order?",
+            "answer": "<p>Orders are typically fulfilled within 24 hours. Delivery times vary depending on your location. Please check our <a href=\"\/pages\/faq\" title=\"Faq\">FAQs<\/a> for more information. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "question_kXX77W": {
+          "type": "question",
+          "settings": {
+            "question": "How does the elevation work?",
+            "answer": "<p>Unlike normal shoes (that feature a basic, flat insole) - we use a bespoke, elevated insole. Integrated inside of the shoe, Conzuri's are engineered to be felt, not seen. <\/p><p>Without compromising on comfort, you can enjoy an invisible boost and maximum confidence. <\/p>"
+          }
+        },
+        "question_Ri7KEj": {
+          "type": "question",
+          "settings": {
+            "question": "What is your return process?",
+            "answer": "<p>We offer a 30 Day Money-Back Guarantee, so you can exchange or return your shoes for whatever reason. Please refer to our <a href=\"\/pages\/terms-conditions\" title=\"Terms & Conditions\">terms & conditions<\/a> for more information. <\/p>"
+          }
+        },
+        "question_BMaNMy": {
+          "type": "question",
+          "settings": {
+            "question": "Where can I track my order?",
+            "answer": "<p>You can track your order <a href=\"\/pages\/track\" title=\"Track your order\">HERE<\/a><\/p>"
+          }
+        },
+        "question_6y4PTU": {
+          "type": "question",
+          "settings": {
+            "question": "Are your shoes true to size?",
+            "answer": "<p>Yes, please order your normal size. If you useually get half-sizes and there is no half-size available, then you should opt for the nearest size-up. <\/p>"
+          }
+        },
+        "question_ccPdb6": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Standard shipping is free, with expedited options available in some regions. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_Mt3nMK",
+        "question_kXX77W",
+        "question_Ri7KEj",
+        "question_BMaNMy",
+        "question_6y4PTU",
+        "question_ccPdb6"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
+    "multi_column_Th7y9d": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_k9Xycf": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust.png",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_k9Xycf"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "slide_on_desk": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17083758432be5c165",
+    "related-products",
+    "faq_bPrkXh",
+    "multi_column_Th7y9d"
+  ]
+}

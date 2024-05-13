@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_title": true,
+        "collections": [
+          "casual",
+          "smart",
+          "boots",
+          "slides"
+        ],
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "image_size": "xs",
+        "content_position": "place-self-end-start text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 17
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

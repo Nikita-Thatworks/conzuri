@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
+  <head>
+    <meta name="google-site-verification" content="i8DTuKFUHkZjtREsqvL38odR0EJsT4Sz8vFVASzV1Ag" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
+
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- endif -%}
+
+    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    {%- unless settings.heading_font.system? -%}
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless settings.text_font.system? -%}
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- render 'social-meta-tags' -%}
+    {%- render 'microdata-schema' -%}
+    {%- render 'css-variables' -%}
+    {%- render 'js-variables' -%}
+
+    {%- if request.page_type == 'gift_card' -%}
+      <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+    <script>
+      if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
+        const importMapPolyfill = document.createElement('script');
+        importMapPolyfill.async = true;
+        importMapPolyfill.src = "{{ 'es-module-shims.min.js' | asset_url }}";
+
+        document.head.appendChild(importMapPolyfill);
+      }
+    </script>
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"97101887", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+{% comment %}
+  <!-- Google tag (gtag.js) event -->
+  <script>
+    gtag('event', 'manual_event_PURCHASE', {
+      // <event_parameters>
+    });
+  </script>
+{% endcomment %}
+
+    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}    
+    {{- 'custom.css' | asset_url | stylesheet_tag: preload: true -}}
+    <meta name="p:domain_verify" content="27575b1a8bcc01768120aa56298f3a1e"/>
+    <script type="importmap">
+      {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
+      {
+        "imports": {
+          "vendor": "{{ 'vendor.min.js' | asset_url }}",
+          "theme": "{{ 'theme.js' | asset_url }}",
+          "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
+        }
+      }
+    </script>
+
+    <script src="{{ 'jquery-script.js' |  asset_url }}"></script>
+    <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+      {% capture content_for_header_2 %}
+        {{ content_for_header }}
+      {% endcapture %}
+     
+<!-- Content for Header Start -->
+     {{ content_for_header_2 
+        |  remove_first: '//us.conzuri.com/cdn/shopifycloud/shopify/assets/storefront/load_feature-87876fa245af19cbd14aa886ed59c6aa8a27c45d24dcd7a81cf2d2323506233e.js'
+        |  remove_first: '//us.conzuri.com/cdn/shopifycloud/shopify/assets/shopify_pay/storefront-a2d444786d996da5634fbbaeeffe6104ee672440dfa6cdcaebfb27dceaaf9c0f.js?v=20220906'
+        |  remove_first: '//us.conzuri.com/cdn/shopifycloud/shopify/assets/storefront/features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js'
+        |  remove_first: 'https://shop.app/checkouts/internal/preloads.js?permanent-domain=conzuri-usa.myshopify.com'
+        |  remove_first: '/checkouts/internal/preloads.js?permanent-domain=conzuri-usa.myshopify.com'
+        |  remove_first: 'https:\/\/cdn.shopify.com\/s\/files\/1\/0617\/2036\/3196\/t\/6\/assets\/subscribe-it.js?v=1708548074\u0026shop=conzuri-usa.myshopify.com'
+     }}
+<!-- Content for Header End -->
+
+<!-- heatmap.com snippet -->
+<script>
+  (function() {      
+    var _heatmap_paq = window._heatmap_paq = window._heatmap_paq || [];
+    var heatUrl = window.heatUrl = "https://dashboard.heatmap.com/";
+    function hLoadInitialScript(url) {
+      var script = document.createElement("script"); script.type = "text/javascript"; 
+      script.src = url; script.async = false; script.defer = true; document.head.appendChild(script);
+    }
+    hLoadInitialScript(heatUrl+"preprocessor.min.js?sid=1985");
+    if(typeof _heatmap_paq !== "object" || _heatmap_paq.length == 0) {     
+      _heatmap_paq.push(["setTrackerUrl", heatUrl+"heatmap.php"]);
+      hLoadInitialScript(heatUrl+"heatmap-light.min.js?sid=1985");
+    }
+  })();
+</script>
+<!-- End heatmap.com snippet Code -->
+
+  </head>
+
+  {% liquid
+    assign features_class = ''
+
+    if settings.show_button_transition
+      assign features_class = features_class | append: 'features--button-transition '
+    endif
+
+    if settings.show_image_zoom_on_hover
+      assign features_class = features_class | append: 'features--zoom-image '
+    endif
+
+    if settings.show_page_transition
+      assign features_class = features_class | append: 'features--page-transition '
+    endif
+  %}
+
+  <body class="{{ features_class }} color-scheme color-scheme--{{ settings.default_color_scheme.id }}">
+    {%- render 'shadow-dom-templates' -%}
+
+    <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+    <a href="#main" allow-hash-change class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+    <span id="header-scroll-tracker" style="position: absolute; width: 1px; height: 1px; top: var(--header-scroll-tracker-offset, 10px); left: 0;">
+      {%- comment -%}
+        This allows our theme to track when the user has scrolled a given amount of pixels, without relying on a global scroll listener. This helps
+        to improve performance and reduce reflows.
+      {%- endcomment -%}
+    </span>
+
+    {%- if request.page_type != 'password' -%}
+      {%- sections 'header-group' -%}
+      {%- sections 'overlay-group' -%}
+    {%- endif -%}
+
+    <main id="main" class="anchor">
+      {{ content_for_layout }}
+
+      {%- comment -%}
+      IMPLEMENTATION NOTE: For best semantics, having the footer group outside the main would be slightly better, but
+        moving it inside the main allows to have all the sections (including sections inside the footer group) to be
+        consecutive, and hence having a cleaner margin collapsing management.
+      {%- endcomment -%}
+      {%- if request.page_type != 'password' -%}
+        {%- sections 'footer-group' -%}
+      {%- endif -%}
+    </main>
+    {% render 'thatworks_js' %}
+    {% if template.name == 'product' %}
+      <script src="{{ 'subscribe-it.js' | asset_url }}"></script>
+      {% render 'subscribe-it-helper' %} 
+    {% endif %}
+  </body>
+</html>

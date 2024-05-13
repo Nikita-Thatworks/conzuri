@@ -1,0 +1,24 @@
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "ae20f521-e3e2-4b2e-8015-70be4fe4cb50"
+  },
+  "sections": {
+    "scrolling_content_RkDyXM": {
+      "settings": {
+      },
+      "blocks": {
+        "text_FqTW6i": {
+          "settings": {
+            "text": "<a href=\"\/pages\/strick-x-conzuri\" title=\"Strick X Conzuri\">STRICK COLLAB LIVE<\/a>"
+          }
+        },
+        "text_m4N3M9": {
+          "settings": {
+            "text": "<a href=\"\/collections\/all\" title=\"All products\">ELEVATED FOOTWEAR<\/a>"
+          }
+        }
+      }
+    }
+  }
+}

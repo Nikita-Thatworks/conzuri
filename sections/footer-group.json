@@ -1,0 +1,134 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 40,
+            "mobile_icon_width": 40,
+            "title": "Free delivery",
+            "content": ""
+          }
+        },
+        "icon-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-credit-card",
+            "icon_width": 40,
+            "mobile_icon_width": 40,
+            "title": "30-Day Returns",
+            "content": ""
+          }
+        },
+        "icon-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-comment",
+            "icon_width": 40,
+            "mobile_icon_width": 40,
+            "title": "24\/7 Support",
+            "content": ""
+          }
+        },
+        "icon-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "icon_width": 40,
+            "mobile_icon_width": 40,
+            "title": "Secure pay",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon-1",
+        "icon-2",
+        "icon-3",
+        "icon-4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 699px) {.text-icons-section-wrapper {padding-block: 30px; }}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "title": "BECOME A VIP",
+            "content": "<p>Be the first to get access to new product drops & email-exclusive discounts. No spam.<\/p>",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "links_FkMHJP": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-menu-2",
+            "show_menu_title": true,
+            "menu_title": "Company",
+            "menu2": "footer",
+            "show_menu_title2": true,
+            "menu_title2": ""
+          }
+        },
+        "links_rw7UnC": {
+          "type": "links",
+          "settings": {
+            "menu": "",
+            "show_menu_title": true,
+            "menu_title": "Terms & Privacy",
+            "menu2": "",
+            "show_menu_title2": true,
+            "menu_title2": ""
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "About",
+            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
+            "enable_follow_on_shop": true
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "links_FkMHJP",
+        "links_rw7UnC",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-39fd7a90-183a-48a2-b336-c81cfe8f09a7",
+        "separate_section_with_border": true,
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "footer"
+  ]
+}

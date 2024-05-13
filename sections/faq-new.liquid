@@ -1,0 +1,337 @@
+<style>
+  .faq-section {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .section-wrapper {
+    padding: 70px 30px;
+    margin: auto;
+  }
+  .section-heading {
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .faq-search {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+  .faq-search input {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 5px 20px;
+    font-size: 10px;
+  }
+  .faq-search input::placeholder {
+     font-size: 12px;
+  }
+  .faq-search input:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  .faq-search svg {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #dddddd;
+  }
+  .faq-categories {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;   
+  }
+  .faq-category {
+    border: 1px solid #dddddd;
+    padding: 12px 0 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .faq-category .category-title {
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+  }
+  .faq-category.active {
+    background-color: black;
+  }
+  .faq-category.active .category-title {
+    color: white;
+  }
+  .faq-category.active svg {
+    filter: invert(1);
+  }
+  .faq-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+  .faq-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #dddddd;
+    display: none;
+    cursor: pointer;
+  }
+  .faq-item.active {
+    display: block;
+  }
+  .faq-item .faq-answer {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .35s ease-in-out;
+  }
+  .faq-item .faq-answer * {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .answer-wrapper.rte p {
+    margin-bottom: 6px;
+}
+  .faq-item .faq-question  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .faq-item .faq-question span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #000000;
+  }
+  .faq-item .faq-question svg {
+    flex: 0 0 15px;
+    height: auto;
+    margin-left: 30px;
+    transform: rotateZ(0);
+    transition: all .35s ease-in-out;
+  }
+  .faq-item[open] .faq-question svg {
+    transform: rotateZ(180deg);
+  }
+  .faq-item[open] .faq-answer {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 900px) {
+    .section-heading {
+      font-size: 16px;
+    }
+    .faq-item {
+      padding: 23px 0;
+    }
+    .faq-search {
+      margin-top: 30px;
+    }
+    .faq-search input {
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+    .faq-search svg {
+      width: 15px;
+      height: 15px;
+      left: 10px;
+    }
+    .faq-item .faq-question {
+      font-size: 15px;
+    }
+    .faq-item .faq-answer {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 680px){
+    .faq-categories {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    }
+  }
+  @media only screen and (max-width: 576px){
+    .faq-categories {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+    }
+    .faq-title{
+    font-size: 14px;
+    margin-bottom: 8px;
+    }
+  }
+</style>
+
+<section id="section-{{ section.id }}">
+  <div class="section-wrapper">
+    <div class="section-heading">{{ section.settings.heading }}</div>
+    <div class="faq-search">
+      <input type="text" placeholder="Search shipping, billing, etc" id="faq-search">
+      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.57408 5.71726C4.75793 5.71726 5.71762 4.75756 5.71762 3.57372C5.71762 2.38987 4.75793 1.43018 3.57408 1.43018C2.39024 1.43018 1.43054 2.38987 1.43054 3.57372C1.43054 4.75756 2.39024 5.71726 3.57408 5.71726Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.25356 6.25344L5.08801 5.08789" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="faq-categories">
+      {% assign activeCategory = "" %}
+      {% for block in section.blocks %}
+        {% if block.type == 'category' %}
+          {% if forloop.index == 1 %}
+            {% assign activeCategory = block.settings.title %}
+          {% endif %}
+          <div class="faq-category{% if forloop.index == 1 %} active{% endif %}" data-category="{{ block.settings.title | handle }}">
+            <div class="category-icon">{{ block.settings.icon }}</div>
+            <div class="category-title">{{ block.settings.title }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="faq-title">{{ activeCategory }}</div>
+    <div class="faqs">
+      {% for block in section.blocks %}
+        {% if block.type == 'faq' %}
+          {% assign activeHandle = activeCategory | handle %}
+          {% assign categoryHandle = block.settings.category | handle %}
+          <div class="faq-item{% if categoryHandle == activeHandle %} active{% endif %}" data-category="{{ block.settings.category | handle }}">
+            <div class="faq-question">
+              <span>{{ block.settings.question }}</span>
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 7.5L7.5 10L10 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.5 5V10" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <div class="answer-wrapper rte">
+                {{ block.settings.answer }}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    Array.from(document.getElementsByClassName("faq-item")).forEach((faqItem) => {
+      faqItem.addEventListener("click", function() {
+        const isOpen = this.hasAttribute("open");
+        Array.from(document.getElementsByClassName("faq-item")).forEach((fi) => {
+          fi.removeAttribute("open")
+          fi.children[1].style.height = '0px';
+        });
+        if (!isOpen) {
+          this.setAttribute("open", '');
+          const height = this.children[1].children[0].clientHeight;
+          this.children[1].style.height = `${height}px`;
+        }
+      })
+    })
+
+    Array.from(document.getElementsByClassName("faq-category")).forEach((faqCategory) => {
+      faqCategory.addEventListener("click", function() {
+        Array.from(document.getElementsByClassName("faq-category")).forEach((fc) => {
+          fc.classList.remove("active");
+        })
+        this.classList.add("active");
+        const heading = this.children[1].textContent;
+        document.getElementsByClassName("faq-title")[0].textContent = heading;
+        const categoryHandle = this.dataset.category;
+
+        Array.from(document.getElementsByClassName("faq-item")).forEach((fi) => {
+          fi.classList.remove("active");
+          if (fi.dataset.category == categoryHandle) fi.classList.add("active");
+        })
+      })
+    })
+
+    document.getElementById("faq-search").addEventListener("change", function() {
+      const keyword = this.value.toLocaleLowerCase();
+      const faqs = document.getElementsByClassName("faq-item");
+
+      Array.from(document.getElementsByClassName("faq-category")).forEach((category) => {
+        category.classList.remove("active");
+      })
+
+      document.getElementsByClassName("faq-title")[0].textContent = "SEARCH RESULTS";
+
+      Array.from(faqs).forEach((faq) => {
+        faq.classList.remove("active");
+        const faqQ = faq.querySelector(".faq-question span").textContent.trim();
+        const faqA = faq.querySelector(".faq-answer").textContent.trim();
+        if (faqQ.toLocaleLowerCase().indexOf(keyword) > -1 || faqA.toLocaleLowerCase().indexOf(keyword) > -1) {
+          faq.classList.add("active");
+        }
+      })
+    })
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "FAQ New",
+    "tag": "section",
+    "class": "faq-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "category",
+        "name": "Category",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "icon",
+            "label": "Icon"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "category",
+            "label": "Category"
+          },
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Faq New"
+      }
+    ]
+  }
+{% endschema %}

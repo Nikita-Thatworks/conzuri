@@ -1,0 +1,128 @@
+{% comment %}
+    2024.2.28 removed from custom.js
+    <script>
+        $('.product-card').hover(
+            function() {
+                $(this).find('.size').addClass('show');
+                $(this).find('.size').removeClass('hide');
+            },
+            function() {
+                $(this).find('.size').addClass('hide');
+                $(this).find('.size').removeClass('show'); 
+            }
+        );
+        $(document).ready(function() {
+            $(document).on('click','.add-to-cart-btn', function() {
+            const variantId = $(this).data('variant-id');
+            $.ajax({
+                type: 'POST',
+                url: '/cart/add.js',
+                data: {
+                id: variantId,
+                quantity: 1
+                },
+                dataType: 'json',
+                success: function() { 
+                document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+                    bubbles: true  //this code is for prestige theme, is to refresh the cart
+                }));
+                setTimeout(function() {
+                    $('.cartDrawer')[0].click(); 
+                }, 500); 
+                },
+                error: function(error) {
+                console.error('Error adding to cart:', error);
+                }
+            });      
+            });
+        });
+    </script>
+{% endcomment %}
+
+{% comment %} IP check {% endcomment %}
+<script>
+    function CHECK_IP(){
+      $.get( "/browsing_context_suggestions.json", function( data ) {
+          var locationData = data.detected_values.country.handle;
+          console.log('%c CURRENCY LOCATION', 'background: green;color: #fff;', locationData);
+          $("[data-option-selector]").attr("location", locationData).show();
+          if ( locationData == 'GB' || locationData == 'NZ' || locationData == 'ZA' ) {
+            $("[data-option-selector] [data-value=UK]").eq(0).trigger("click");
+          }
+          else if (locationData == 'US' || locationData == 'CA'){
+            $(`[data-option-selector] [data-value=US]`).eq(0).trigger("click");
+          }
+          else if (locationData == 'JP'){
+            $(`[data-option-selector] [data-value=JP]`).eq(0).trigger("click");
+          }
+          else {
+            $(`[data-option-selector] [data-value=EU]`).eq(0).trigger("click");
+          }
+      });
+    }
+    CHECK_IP();
+</script>
+{% comment %} IP check {% endcomment %}
+
+{% comment %} Sticky Button JS {% endcomment %}
+{% if template.name == 'product' %}
+    <script>
+        $(document).ready(function() {
+            showStickyButton(); // Call the function on document ready
+
+            // Add a scroll event listener
+            $(window).scroll(function() {  
+                showStickyButton(); // Call the function on scroll
+            });
+
+            function showStickyButton() {
+                const buyButtons = $('.buy-buttons');
+                const offsetBefore = buyButtons.offset().top + buyButtons.height();
+
+                // Check if the buy-buttons is not currently visible or if it's the initial load
+                if ( window.scrollY > offsetBefore ) {
+                    $('.product-sticky-bar').addClass('stickyy');
+                } 
+                else {
+                    $('.product-sticky-bar').removeClass('stickyy');
+                }
+            }
+        });
+    </script>
+{% endif %}
+{% comment %} Sticky Button JS {% endcomment %}
+
+{%- comment -%} Lazyload JS {%- endcomment -%}
+<script>
+    function lazy_load_section(section_id) {
+        $.ajax({
+            method: "GET",
+            url: `${window.location.pathname}?section_id=${section_id}&section_lazy_loading=true`,
+            success: function (response) {
+                $(`#shopify-section-${section_id}`).removeClass('lazy_section');
+                $(`#shopify-section-${section_id}`).empty().append($(response).children());
+                console.log(`%c Lazy loaded ${section_id}`, 'background: pink; color: green; padding: 10px; font-weight: bold;');
+            }
+        });
+    }
+    function render_all_lazy_sections() {
+        $('.lazy_section').each(function () {
+            var section_id = $(this).attr('id').split('-section-')[1];
+            lazy_load_section(section_id);
+        });
+    }
+    $(document).ready(function () {
+        var lazy_loaded = false;
+        document.addEventListener("scroll", function(){
+            if ((window.scrollY > 1) || ($('body').height() <= window.innerHeight)) {
+                console.log('%c lazyload all sections...', 'background: green;');
+                if (!lazy_loaded){
+                    render_all_lazy_sections();
+                    CHECK_IP();
+                    lazy_loaded = true;
+                }
+            } 
+        });
+    });
+</script>
+{%- comment -%} Lazyload JS {%- endcomment -%}

@@ -1,0 +1,123 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message-1": {
+          "type": "message",
+          "settings": {
+            "text": "NEW YEAR SALE - UP TO 30% OFF"
+          }
+        }
+      },
+      "block_order": [
+        "message-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "enable_sticky": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "desktop_font_size": 11,
+        "mobile_font_size": 10
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_aMqraz": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "footwear",
+            "images_position": "left",
+            "image_1": "shopify:\/\/shop_images\/1_77.jpg",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "shopify:\/\/collections\/all",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_aMqraz"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_sticky": true,
+        "show_separation_border": true,
+        "reduce_padding": false,
+        "logo": "shopify:\/\/shop_images\/new-conzuri-logo-web_230x_230x_3f6dfc72-1c22-4847-a8ac-4d9f0ee4a99e.webp",
+        "logo_max_width": 160,
+        "logo_mobile_max_width": 125,
+        "menu": "new-menu",
+        "sidebar_menu": "",
+        "menu_open_trigger": "hover",
+        "enable_search": true,
+        "sidebar_color_scheme": "",
+        "sidebar_text_font": "heading",
+        "sidebar_show_dividers": true,
+        "layout": "logo_center_navigation_inline",
+        "show_icons": true,
+        "show_country_selector": false,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "show_locale_selector": false,
+        "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify:\/\/shop_images\/new-conzuri-logo-web_230x_d6b7fb64-3bda-46a0-ab98-e931eb322b28.webp"
+      }
+    },
+    "scrolling_content_RkDyXM": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_xzcxf4": {
+          "type": "text",
+          "settings": {
+            "text": "DISCREET & COMFORTABLE"
+          }
+        },
+        "text_FqTW6i": {
+          "type": "text",
+          "settings": {
+            "text": "FREE SHIPPING OVER <strong>$199<\/strong>"
+          }
+        },
+        "text_m4N3M9": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"\/collections\/all-products\" title=\"All Products\">ELEVATED FOOTWEAR<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "text_xzcxf4",
+        "text_FqTW6i",
+        "text_m4N3M9"
+      ],
+      "settings": {
+        "bg_color": "#f7f7f7",
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.1,
+        "scroll_direction": "left",
+        "text_font": "heading",
+        "text_font_size_mobile": 12,
+        "text_font_size_desktop": 12,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 55,
+        "item_horizontal_spacing_desktop": 115,
+        "background": "#f8f8f8",
+        "text_color": "#000000"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "scrolling_content_RkDyXM"
+  ]
+}

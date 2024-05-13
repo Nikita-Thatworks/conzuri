@@ -1,0 +1,18 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "ae20f521-e3e2-4b2e-8015-70be4fe4cb50"
+  },
+  "sections": {
+    "slideshow": {
+      "settings": {},
+      "blocks": {
+        "slide-1": {
+          "settings": {
+            "mobile_image": "shopify:\/\/shop_images\/elevate-mob-final.jpg"
+          }
+        }
+      }
+    }
+  }
+}

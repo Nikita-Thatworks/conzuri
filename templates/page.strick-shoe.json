@@ -1,0 +1,608 @@
+{
+  "sections": {
+    "slideshow_QFBnd7": {
+      "type": "slideshow",
+      "blocks": {
+        "image_aBdAVg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_41.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/pfx01.png",
+            "subheading": "",
+            "hide_subheading_mobile": false,
+            "title": "",
+            "hide_mobile": false,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "enable_custom_position": false,
+            "left": 0,
+            "top": 50,
+            "left_mobile": 0,
+            "top_mobile": 50,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#1c1c1c",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
+        "image_AnMA3U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banners_5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/pfxx.png",
+            "subheading": "",
+            "hide_subheading_mobile": false,
+            "title": "",
+            "hide_mobile": false,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "enable_custom_position": false,
+            "left": 0,
+            "top": 50,
+            "left_mobile": 0,
+            "top_mobile": 50,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
+        "image_m6NPFT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner2_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_2.jpg",
+            "subheading": "",
+            "hide_subheading_mobile": false,
+            "title": "",
+            "hide_mobile": false,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "enable_custom_position": false,
+            "left": 0,
+            "top": 50,
+            "left_mobile": 0,
+            "top_mobile": 50,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_aBdAVg",
+        "image_AnMA3U",
+        "image_m6NPFT"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "enable_button_animation": false,
+        "background": "#efefef",
+        "controls_color": "#1c1c1c"
+      }
+    },
+    "logo_list_AdFCAm": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_4axnD4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/HYPEBEAST-Logo__2022.png",
+            "logo_width": 140,
+            "link": ""
+          }
+        },
+        "logo_9kDikR": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/COMPLEX_Magazine_Logo.svg",
+            "logo_width": 90,
+            "link": ""
+          }
+        },
+        "logo_Awfg4W": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Harper_s_Bazaar_Logo_svg.png",
+            "logo_width": 100,
+            "link": ""
+          }
+        },
+        "logo_JWz4gx": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/footnewss.png",
+            "logo_width": 50,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_4axnD4",
+        "logo_9kDikR",
+        "logo_Awfg4W",
+        "logo_JWz4gx"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "",
+        "items_per_row": 4,
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "featured_product_eDUFXY": {
+      "type": "featured-product",
+      "blocks": {
+        "title_eJMYLC": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_emfaVL": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_wyMnE7": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_EzP4x7": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_mcgX9N": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator_DMnfrK": {
+          "type": "separator",
+          "settings": {}
+        },
+        "offers_TJM9fQ": {
+          "type": "offers",
+          "settings": {
+            "stack_offers": true,
+            "offer_1_title": "",
+            "offer_1_content": "",
+            "offer_2_title": "",
+            "offer_2_content": "<p><strong>US Delivery Only | Shipped from California <\/strong><\/p>",
+            "offer_3_title": "",
+            "offer_3_content": "",
+            "background": "",
+            "text_color": "",
+            "border_color": ""
+          }
+        },
+        "variant_picker_VYrGMn": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "variant",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_tREMWH": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ibKqaw": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#4b4b4b",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "accordion_eJWN6c": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Description",
+            "content": "<p>Padded leather upper with polyester wadding for superior comfort. Equipped with an elastic locking mechanism and rear spring toggle for easy puffer adjustment. Style points are added through soft microfiber paneling, heavy grain upper and an extra padded shoe tongue.<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "pickup_availability_CNkXfp": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "accordion_zeTN8U": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Who is Strick?",
+            "content": "<p>Strick is an American rapper and Grammy-Nominated Singer - who has worked closely with Grammy-Awarded artists such as <em>Travis Scott, Lil Baby, A$AP Rocky, Future, Young Thug, Wiz Khalifa, Ty Dolla $ign, Kid Cudi & More.<\/em><\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_LdWqJJ": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Shipping & Delivery",
+            "content": "<p>US orders will be shipped from California (expedited delivery available | 2-4 days)<\/p><p>International orders typically arrive in ~8-14 days<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_kpdmi9": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Returns",
+            "content": "<p>We accept returns & exchanges on all products, up to 30 days after purchase. Please see our returns policy for more details.<\/p>",
+            "liquid": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_eJMYLC",
+        "badges_emfaVL",
+        "price_wyMnE7",
+        "rating_EzP4x7",
+        "payment_terms_mcgX9N",
+        "separator_DMnfrK",
+        "offers_TJM9fQ",
+        "variant_picker_VYrGMn",
+        "quantity_selector_tREMWH",
+        "buy_buttons_ibKqaw",
+        "accordion_eJWN6c",
+        "pickup_availability_CNkXfp",
+        "accordion_zeTN8U",
+        "accordion_LdWqJJ",
+        "accordion_kpdmi9"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "product": "pfx01",
+        "separate_section_with_border": true,
+        "container_size": "lg",
+        "product_info_size": 45,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "multi_column_pD4PrT": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_kryVPG": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/first-piuf.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>PUFFER-MODE<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_GqQXnb": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/puffer.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>REMOVE PUFFER<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_jQH7PM": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/remove-puffer.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>PUFFER DETATCHED<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_xCeBtF": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/no-puff.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>SKELETON MODE<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_kryVPG",
+        "image_with_text_GqQXnb",
+        "image_with_text_jQH7PM",
+        "image_with_text_xCeBtF"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "slide_on_desk": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "STYLE GUIDE",
+        "content": ""
+      }
+    },
+    "multiple_media_with_text_4MGnfM": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_TK37Lw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10.jpg",
+            "rotation": 0
+          }
+        },
+        "image_q4eUee": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_0c54e68e-6770-44a2-a7ad-31ed5d3e7b5a.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_TK37Lw",
+        "image_q4eUee"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": true,
+        "media_position_desktop": "after_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "pfx01",
+        "title": "the story",
+        "content": "<p>The STRICK Collection by CONZURI is part of our design-collaborative series where we work with unique personalities in the world of art, fashion & music to provide an immersive experience through footwear.<br\/><br\/>Designed in collaboration with @strick, American rapper and Grammy nominated singer - who has worked closely with Grammy Awarded artists such as Travis Scott, Lil Baby, A$AP Rocky, Future, Young Thug, Wiz Khalifa, Ty Dolla $ign, Kid Cudi and many more.<br\/><br\/>This custom design made its pre-debut at Milan Fashion Week and sold out in 3 days on launch day.<\/p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "slideshow_fBc3iz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ia7H7c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/social-proof_46effb3e-7d5c-4395-a80e-ba1434fcb172.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_4.jpg",
+            "subheading": "",
+            "hide_subheading_mobile": false,
+            "title": "",
+            "hide_mobile": false,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "enable_custom_position": false,
+            "left": 0,
+            "top": 50,
+            "left_mobile": 0,
+            "top_mobile": 50,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ia7H7c"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "enable_button_animation": false,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "multi_column_hL6kfX": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_r9hVE9": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust.png",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_r9hVE9"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "slide_on_desk": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "multi_column_HPXyBz": {
+      "type": "multi-column",
+      "blocks": {
+        "video_with_text_8CGN4L": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/ty dollaaa.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "Gifting ty dolla $ign",
+            "heading_tag": "h5",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "video_with_text_cxQ3dU": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/strick new site vid.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "PFX showreel",
+            "heading_tag": "h5",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_6YtMBB": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/milan-strick.png",
+            "title": "Milan Fashion Week",
+            "heading_tag": "h5",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_with_text_8CGN4L",
+        "video_with_text_cxQ3dU",
+        "image_with_text_6YtMBB"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "slide_on_desk": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow_QFBnd7",
+    "logo_list_AdFCAm",
+    "featured_product_eDUFXY",
+    "multi_column_pD4PrT",
+    "multiple_media_with_text_4MGnfM",
+    "slideshow_fBc3iz",
+    "multi_column_hL6kfX",
+    "multi_column_HPXyBz"
+  ]
+}

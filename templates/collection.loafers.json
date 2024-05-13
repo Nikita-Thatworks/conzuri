@@ -1,0 +1,381 @@
+{
+  "sections": {
+    "before_after_K7xiD4": {
+      "type": "before-after",
+      "blocks": {
+        "before_6g3iBa": {
+          "type": "before",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify:\/\/shop_images\/loafers-before-ifnal.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/loafer_desktop_1.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "after_8MjgmP": {
+          "type": "after",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify:\/\/shop_images\/loafers-after-final.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/loafer_desktop_2.jpg",
+            "text": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "before_6g3iBa",
+        "after_8MjgmP"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "",
+        "content": "<p>All Conzuri's feature a comfortable, elevated insole.<\/p>",
+        "cursor_direction": "horizontal",
+        "cursor_initial_position": 62,
+        "cursor_background": "#ffffff",
+        "cursor_arrows_color": "#000000"
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_size": "sm",
+        "allow_transparent_header": true,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "",
+        "hide_product_information": false,
+        "products_per_page": 50,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_results_count": false,
+        "show_filter_group_name": false,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": false,
+        "show_color_swatch": false,
+        "open_filters_by_default": false
+      }
+    },
+    "multi_column_R3MW36": {
+      "type": "multi-column",
+      "blocks": {
+        "video_with_text_r8kYV9": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/ty dolla new site.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "R&B ARTIST",
+            "heading_tag": "h3",
+            "content": "<p>@tydollasign<\/p>",
+            "link_url": "shopify:\/\/pages\/strick-x-conzuri",
+            "link_text": "Strick X Conzuri Collab"
+          }
+        },
+        "image_with_text_DhQy7F": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/futuree.jpg",
+            "title": "hip-hop artist",
+            "heading_tag": "h3",
+            "content": "<p>@future<\/p>",
+            "link_url": "shopify:\/\/pages\/strick-x-conzuri",
+            "link_text": "Strick X Conzuri Collab"
+          }
+        },
+        "image_with_text_FQxMKw": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLIDES-KOREA.png",
+            "title": "K-POP STAR",
+            "heading_tag": "h3",
+            "content": "<p>@min9yu_k<\/p>",
+            "link_url": "",
+            "link_text": "Slides"
+          }
+        },
+        "image_with_text_3DCYYd": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BRAZIL-SHE.jpg",
+            "title": "BRAZILLIAN musician",
+            "heading_tag": "h3",
+            "content": "<p>@pozevidalouca<\/p>",
+            "link_url": "shopify:\/\/products\/vanta-axels-2-5-boost",
+            "link_text": "V2 Vanta Axels"
+          }
+        },
+        "image_with_text_98kPKf": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logan.png",
+            "title": "YOUTUBE STAR",
+            "heading_tag": "h3",
+            "content": "<p>@loganpaul<\/p>",
+            "link_url": "shopify:\/\/products\/vexors-midnight",
+            "link_text": "Vexors"
+          }
+        },
+        "image_with_text_bTJXyX": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kobbie_33659eaa-5c6a-43e6-95a4-fdcf3ec7b68e.jpg",
+            "title": "MAN-UNITED PLAYER",
+            "heading_tag": "h3",
+            "content": "<p>@kobbie<\/p>",
+            "link_url": "shopify:\/\/products\/polar-axels",
+            "link_text": "Polar Axels"
+          }
+        },
+        "image_with_text_bEwPhb": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/codyko.jpg",
+            "title": "YOUTUBE STAR",
+            "heading_tag": "h3",
+            "content": "<p>@codyko<\/p>",
+            "link_url": "shopify:\/\/products\/polar-axels",
+            "link_text": "Polar Axels"
+          }
+        },
+        "image_with_text_ADjknk": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jeff.png",
+            "title": "youtube star",
+            "heading_tag": "h3",
+            "content": "<p>@jeffwitek<\/p>",
+            "link_url": "shopify:\/\/products\/midnight-runners",
+            "link_text": "Midnight Runners"
+          }
+        }
+      },
+      "block_order": [
+        "video_with_text_r8kYV9",
+        "image_with_text_DhQy7F",
+        "image_with_text_FQxMKw",
+        "image_with_text_3DCYYd",
+        "image_with_text_98kPKf",
+        "image_with_text_bTJXyX",
+        "image_with_text_bEwPhb",
+        "image_with_text_ADjknk"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "slide_on_desk": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "",
+        "title": "SEEN ON OUR COMMUNITY",
+        "content": ""
+      }
+    },
+    "multi_column_TKG9MK": {
+      "type": "multi-column",
+      "blocks": {
+        "video_with_text_J8wUL6": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/img-1387_6l41kw5V.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "CEDARS",
+            "heading_tag": "h3",
+            "content": "<p>Relaxed, urban fit - for the perfect street-aesthetic. <\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "video_with_text_HFiHRq": {
+          "type": "video_with_text",
+          "disabled": true,
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/52f9a6ea-a73f-45da-862c-092136fb5ee4_gYLNu7wa.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "Brixtons",
+            "heading_tag": "h3",
+            "content": "<p>Winter Season aesthetic for those on-the move. <\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "video_with_text_kJFzQc": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/brixtons-4-not2ext-1_HMf2MBXC.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "BRIXTONS",
+            "heading_tag": "h3",
+            "content": "<p>Timeless, black silohette - for the winter months.<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_with_text_J8wUL6",
+        "video_with_text_HFiHRq",
+        "video_with_text_kJFzQc"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "slide_on_desk": true,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "faq_fzqX6L": {
+      "type": "faq",
+      "blocks": {
+        "question_J9MMqP": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my order?",
+            "answer": "<p>Orders are typically fulfilled within 24 hours. Delivery times vary depending on your location. Please check our <a href=\"\/pages\/faq\" title=\"Faq\">FAQs<\/a> for more information. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "question_FkGFpj": {
+          "type": "question",
+          "settings": {
+            "question": "How does the elevation work?",
+            "answer": "<p>Unlike normal shoes (that feature a basic, flat insole) - we use a bespoke, elevated insole. Integrated inside of the shoe, Conzuri's are engineered to be felt, not seen. <\/p><p>Without compromising on comfort, you can enjoy an invisible boost and maximum confidence. <\/p>"
+          }
+        },
+        "question_AYbjUn": {
+          "type": "question",
+          "settings": {
+            "question": "What is your return process?",
+            "answer": "<p>We offer a 30 Day Money-Back Guarantee, so you can exchange or return your shoes for whatever reason. Please refer to our <a href=\"\/pages\/terms-conditions\" title=\"Terms & Conditions\">terms & conditions<\/a> for more information. <\/p>"
+          }
+        },
+        "question_Ad3eCP": {
+          "type": "question",
+          "settings": {
+            "question": "Where can I track my order?",
+            "answer": "<p>You can track your order <a href=\"\/pages\/track\" title=\"Track your order\">HERE<\/a><\/p>"
+          }
+        },
+        "question_Ew4EaJ": {
+          "type": "question",
+          "settings": {
+            "question": "Are your shoes true to size?",
+            "answer": "<p>Yes, please order your normal size. If you useually get half-sizes and there is no half-size available, then you should opt for the nearest size-up. <\/p>"
+          }
+        },
+        "question_8PKXNY": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Standard shipping is free, with expedited options available in some regions. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_J9MMqP",
+        "question_FkGFpj",
+        "question_AYbjUn",
+        "question_Ad3eCP",
+        "question_Ew4EaJ",
+        "question_8PKXNY"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
+    "multi_column_y8PGpj": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_rCUiqz": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust.png",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_rCUiqz"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "slide_on_desk": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "before_after_K7xiD4",
+    "collection-banner",
+    "main",
+    "multi_column_R3MW36",
+    "multi_column_TKG9MK",
+    "faq_fzqX6L",
+    "multi_column_y8PGpj"
+  ]
+}
