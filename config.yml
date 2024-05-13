@@ -1,0 +1,11 @@
+development:
+    password: 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
+    theme_id: "134918242492"
+    store: conzuri-usa.myshopify.com
+    ignore_files:
+
+
+# https://us.conzuri.com/?preview_theme_id=134918242492
+# shopify theme pull -s conzuri-usa.myshopify.com -t 134918242492
+# shopify theme dev -s conzuri-usa.myshopify.com -t 134918242492 
+# shopify theme dev -s conzuri-usa.myshopify.com -t 134918242492 --theme-editor-sync
